@@ -1,0 +1,15 @@
+pip install discord.py[voice]
+pip install discord-ext-voice-recv
+pip install py-cord pynacl
+pip install -U openai-whisper
+pip install requests
+pip install webrtcvad
+
+
+ffmpeg must be installed and accessible in your system PATH for voice functionalities.
+https://www.youtube.com/watch?v=eRZRXpzZfM4 Here is video guide to install ffmpeg
+
+this is for Piper TTS
+https://www.youtube.com/watch?v=GGvdq3giiTQ Video guide to install
+
+There may be some errors in the console/terminal but it works

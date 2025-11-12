@@ -12,8 +12,8 @@ from ai_processor import AIProcessor
 from tts_processor import TTSProcessor
 
 #  Config
-TOKEN = "Your_Token" # Replace with your Discord Bot Token
-GUILD_ID = [0000000] # Replace with your Discord Server Guild ID/ID
+TOKEN = "Your_token" # Replace with your Discord Bot Token
+GUILD_ID = [00000] # Replace with your Discord Server Guild ID/ID
 RECORDINGS_DIR = "recordings" # Directory to save audio recordings STT/TTS
 os.makedirs(RECORDINGS_DIR, exist_ok=True)
 
@@ -93,7 +93,7 @@ class VoiceRecorder(commands.Cog):
             sink = WaveSink()
             try:
                 vc.start_recording(
-                    WaveSink(),
+                    sink,
                     make_audio_callback(vc, channel),
                     None
                 )
@@ -172,9 +172,6 @@ class VoiceRecorder(commands.Cog):
         await ctx.respond("Stopped listening and left the voice channel.", ephemeral=True)
 
 
-# ==========================================================
-#                       BOT CLIENT
-# ==========================================================
 class BotClient(commands.Bot):
     def __init__(self):
         super().__init__(command_prefix="!", intents=intents)

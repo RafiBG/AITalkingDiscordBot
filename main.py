@@ -148,6 +148,7 @@ class VoiceRecorder(commands.Cog):
                 msg += " Started listening for speech."
 
             await ctx.followup.send(msg, ephemeral=True)
+            # COMMENTING THIS DOWN MAY MAKE IT NOT RESPONDING TO JOINING TEXT CHANNEL
             #await ctx.channel.send(f"**{ctx.author.display_name}** started the AI voice session.")
         except Exception as e:
             await ctx.followup.send(f"Error while joining: `{e}`", ephemeral=True)

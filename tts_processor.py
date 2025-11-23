@@ -8,7 +8,7 @@ from discord.opus import Encoder
 from discord.sinks import WaveSink
 
 # Configuration for Piper  The Piper.exe runs on CPU only.
-PIPER_MODEL_NAME = "en_GB-northern_english_male-medium.onnx" # Replace with your desired Piper model name
+PIPER_MODEL_NAME = "jarvis-high.onnx" # Replace with your desired Piper model name that ends with .onnx
 PIPER_EXECUTABLE_PATH = "C:/Downloads/PiperTTS/piper.exe"  # Replace this path to your Piper executable location
 RECORDINGS_DIR = "recordings"
 

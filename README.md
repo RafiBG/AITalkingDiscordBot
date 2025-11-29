@@ -1,4 +1,4 @@
-# 🗣️ AITalkingDiscordBot (Python Voice Client)
+# AITalkingDiscordBot (Python Voice Client)
 
 [![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/)
 [![Discord.py](https://img.shields.io/badge/Library-discord.py-blueviolet.svg)](https://discordpy.readthedocs.io/en/latest/)
